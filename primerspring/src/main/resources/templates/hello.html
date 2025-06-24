@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Form</title>
+    <script>
+        async function sendPostRequest(event) {
+            event.preventDefault(); 
+            const name = document.getElementById("name").value;
+
+            const response = await fetch('/hello', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `name=${encodeURIComponent(name)}`,
+            });
+
+            const result = await response.text(); 
+            document.getElementById("greeting").innerText = result; 
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello Form</h1>
+    <form onsubmit="sendPostRequest(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Send</button>
+    </form>
+    <h2>Greeting:</h2>
+    <p id="greeting">Hello, World!</p>
+</body>
+</html>
