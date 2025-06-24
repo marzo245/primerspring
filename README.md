@@ -1,58 +1,103 @@
-¡Perfecto! He mantenido todas las imágenes como en tu README original, pero con un estilo más claro y profesional. Aquí va:
+# 🧪 Proyecto Inicial con Spring Boot
+
+Este repositorio documenta los pasos básicos para crear y probar una aplicación Java utilizando el framework **Spring Boot**, con recursos estáticos y endpoints dinámicos.
+
+## 📚 Tabla de Contenidos
+
+1. [🚀 Creación del Proyecto](#-creación-del-proyecto)
+2. [🌐 Desarrollo del Primer Endpoint](#-desarrollo-del-primer-endpoint)
+3. [🖥️ Recurso Estático HTML](#️-recurso-estático-html)
+4. [✅ Pruebas del Endpoint](#-pruebas-del-endpoint)
+5. [🚫 Manejo de Rutas No Definidas](#-manejo-de-rutas-no-definidas)
+6. [🧪 Prueba Final sin Ruta](#-prueba-final-sin-ruta)
+7. [💬 Interfaz Dinámica con HTML + JS](#-interfaz-dinámica-con-html--js)
+8. [🧪 Pruebas con Datos Dinámicos](#-pruebas-con-datos-dinámicos)
 
 ---
 
-# 🧪 Primer Proyecto con Spring Boot
+## 🚀 Creación del Proyecto
 
-Este repositorio documenta la creación y pruebas iniciales de un proyecto Java usando [Spring Initializr](https://start.spring.io/index.html).
-
-## 📁 1. Creación del proyecto
-
-Generado desde Spring Initializr.
+El proyecto fue generado utilizando [Spring Initializr](https://start.spring.io/).  
+Incluye dependencias básicas para desarrollo web con Spring Boot.
 
 ![Creación del proyecto](https://github.com/user-attachments/assets/1bd0069e-ae5d-4f47-ada6-4b3840ad4374)
 
 ---
 
-## 🌐 2. Primer Endpoint
+## 🌐 Desarrollo del Primer Endpoint
 
-Se desarrolla el primer controlador con un endpoint básico.
+Se implementó un **controlador REST** con un endpoint básico que retorna un mensaje de texto plano.
 
 ![Primer endpoint](https://github.com/user-attachments/assets/b7887971-4584-40a8-8b35-dfd841e9d97d)
 
 ---
 
-## 🖥️ 3. Recurso Estático (HTML)
+## 🖥️ Recurso Estático HTML
 
-Se incluye un recurso estático llamado `greeting.html`.
+Se agregó el archivo `greeting.html` dentro del directorio `resources/static/`, el cual puede ser accedido directamente por el navegador.
 
 ![Recurso estático HTML](https://github.com/user-attachments/assets/e55a977b-6f05-4702-8550-7092c8c5d7f9)
 
 ---
 
-## ✅ 4. Pruebas del Endpoint
+## ✅ Pruebas del Endpoint
 
-Pruebas realizadas desde el navegador y a través de la URL.
+Las pruebas se realizaron accediendo al endpoint a través del navegador y validando el mensaje de respuesta.
 
 ![Prueba 1](https://github.com/user-attachments/assets/db812c4f-d55a-4a2a-ba0c-e913778d5711)  
 ![Prueba 2](https://github.com/user-attachments/assets/1187b8ab-226c-4f81-b605-5d7bf19cee0e)
 
 ---
 
-## 🚫 5. Ruta no definida
+## 🚫 Manejo de Rutas No Definidas
 
-Se configura comportamiento para cuando no se especifica una ruta.
+Se configuró el comportamiento por defecto para rutas inexistentes, devolviendo un mensaje o recurso personalizado.
 
 ![Ruta sin definir](https://github.com/user-attachments/assets/b2d774ad-c702-4f66-b89c-33e402faf510)
 
 ---
 
-## 🧪 6. Prueba Final
+## 🧪 Prueba Final sin Ruta
 
-Verificación del comportamiento cuando no hay ruta definida.
+Se validó el comportamiento cuando se accede a una ruta no definida, mostrando el mensaje correspondiente.
 
 ![Prueba final](https://github.com/user-attachments/assets/4005a529-03dc-481c-b36e-cddfe7c37b4e)
 
 ---
 
-¿Te gustaría que también lo traduzca al inglés o lo complete con una sección de instalación y ejecución del proyecto?
+## 💬 Interfaz Dinámica con HTML + JS
+
+Se desarrolló una interfaz en HTML con JavaScript que permite enviar datos mediante un formulario al endpoint `/Hello` usando `POST`.  
+El backend procesa la información y retorna un mensaje dinámico.
+
+![Interfaz dinámica](https://github.com/user-attachments/assets/b32716c9-2790-4078-a2ce-b72c8c67e52f)
+
+---
+
+## 🧪 Pruebas con Datos Dinámicos
+
+Se realizaron pruebas enviando diferentes mensajes desde la interfaz HTML y visualizando las respuestas generadas por el backend.
+
+**Ejemplo de mensaje personalizado:**
+
+![Resultado](https://github.com/user-attachments/assets/66a8fa81-b4ea-4d71-a2af-487b8ba72e8b)
+
+**Envío de información adicional:**
+
+![Resultado adicional](https://github.com/user-attachments/assets/67b915cc-2c03-4d22-84de-39b7064f387f)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT) *(puedes cambiarla si usas otra como GNU/GPL)*.
+
+---
+
+## 🙌 Autor
+
+Diego Chicuazuque  
+Estudiante de Ingeniería de Sistemas  
+```
+
+
